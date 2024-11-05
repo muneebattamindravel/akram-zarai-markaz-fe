@@ -1,0 +1,34 @@
+************* M E E Z A N ***************
+1 Date: 03/11/2023, Payee Adjustment , Amount: 885
+2 Date: 01/08/2023, Payee Babar Mahmood , Amount: -50650
+3 Date: 12/10/2020, Payee Account Closed , Amount: 1800522
+4 Date: 08/06/2020, Payee Employee Taxes , Amount: -25380
+5 Date: 12/05/2020, Payee Bank Charges , Amount: -22040
+6 Date: 13/04/2020, Payee Muneeb , Amount: -2500
+7 Date: 13/04/2020, Payee Muneeb , Amount: -32225
+8 Date: 13/04/2020, Payee Muneeb , Amount: -10457
+9 Date: 13/04/2020, Payee Omar Oppal , Amount: -42355
+10 Date: 10/04/2020, Payee Adjustment , Amount: -90
+11 Date: 16/03/2020, Payee Marukh , Amount: -74091
+12 Date: 11/03/2020, Payee Employee Taxes , Amount: -25382
+13 Date: 11/02/2020, Payee Marukh , Amount: -74318
+14 Date: 24/01/2020, Payee Earnings Received , Amount: 18192
+15 Date: 21/01/2020, Payee Muneeb , Amount: -17788
+16 Date: 21/01/2020, Payee Muneeb , Amount: -2787
+17 Date: 21/01/2020, Payee Muneeb , Amount: -25811
+18 Date: 20/01/2020, Payee Saad , Amount: -177874
+19 Date: 20/01/2020, Payee Saad , Amount: -9556
+20 Date: 07/01/2020, Payee Marukh , Amount: -69318
+21 Date: 10/12/2019, Payee Marukh , Amount: -69318
+22 Date: 07/11/2019, Payee Marukh , Amount: -68636
+23 Date: 14/10/2019, Payee Employee Taxes , Amount: -15636
+24 Date: 25/09/2019, Payee Muneeb MR Negative , Amount: -57947
+25 Date: 25/09/2019, Payee Askari Credit Card , Amount: -10683
+26 Date: 25/09/2019, Payee Muneeb TPL Negative , Amount: -5330
+27 Date: 25/09/2019, Payee Askari Credit Card , Amount: -48018
+28 Date: 25/09/2019, Payee HBL Credit Card Expanse , Amount: -17392
+29 Date: 20/09/2019, Payee Bank Charges , Amount: -373
+30 Date: 27/07/2019, Payee Saad , Amount: -58000
+31 Date: 16/07/2019, Payee WHT , Amount: -379
+32 Date: 16/07/2019, Payee Bank Charges , Amount: -640
+33 Date: 09/07/2019, Payee STARTING BALANCE , Amount: 728219

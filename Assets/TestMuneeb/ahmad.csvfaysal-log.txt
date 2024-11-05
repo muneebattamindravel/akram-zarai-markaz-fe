@@ -1,0 +1,5 @@
+************* F A Y S A L ***************
+1 Date: 17/05/2022, Payee WHT , Amount: -5
+2 Date: 17/05/2022, Payee Earnings Received , Amount: 478
+3 Date: 27/09/2021, Payee WHT , Amount: -69
+4 Date: 27/09/2021, Payee Earnings Received , Amount: 6995

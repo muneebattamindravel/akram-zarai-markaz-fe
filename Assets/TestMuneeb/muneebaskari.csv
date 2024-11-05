@@ -1,0 +1,7 @@
+Type,Status,Date,Payee,Category/Account,Amount,Note,Memo,Number,Security,Shares,Price/Share,Commission
+Withdrawal,Cleared,05/07/2023,Muneeb,Salary,"-Rs 418,440",muneeb salary bonus,,,,"","",""
+Withdrawal,Uncleared,05/07/2023,Upwork,IT Services,"Rs 418,440",,,,,"","",""
+Withdrawal,Cleared,06/05/2023,Muneeb,Salary,"-Rs 726,760",Muneeb salary bonus,,,,"","",""
+Withdrawal,Uncleared,19/04/2023,Upwork,IT Services,"Rs 331,706",,,,,"","",""
+Withdrawal,Uncleared,29/03/2023,Upwork,IT Services,"Rs 395,054",,,,,"","",""
+Deposit,Uncleared,01/01/2023,STARTING BALANCE,,Rs 0,BALANCE ADJUSTMENT,,,,"","",""

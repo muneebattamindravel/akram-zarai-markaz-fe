@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{1DB46135-5DBD-A88A-E27A-F5101FDD4FD0}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Screens/Screen_Sale_View_Add.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Screens/Screen_Sale_View_Add.cs" Line="147" Column="67" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="32c12f9a-7751-435e-9d50-e29b41dcdddf" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
