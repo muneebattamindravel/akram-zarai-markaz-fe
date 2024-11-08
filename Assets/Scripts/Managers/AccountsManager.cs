@@ -15,7 +15,11 @@ public class AccountsManager : MonoBehaviour
     {
         if (Instance == null) Instance = this;
         else if (Instance != this) Destroy(gameObject);
+
+        ;
     }
+
+    
 
     string ACCOUNTS_ROUTE = "accounts";
     string ADD_CAPITAL_ROUTE = "accounts/capital";
