@@ -184,6 +184,11 @@ public static class Constants
     public static string EnterReturnPrice = "ENTER RETURN PRICE";
     public static string DiscoutGreater = "DISCOUNT CAN NOT BE MORE THAN TOTAL SALE AMOUNT";
     public static string EnterPaymentReceived = "ENTER PAYMENT RECEIVED";
+
+    public static string EnterReturnAmount = "ENTER AMOUNT TO BE RETURNED";
+
+    public static string WrongReturnAmount = "RETURN AMOUNT CAN'T BE NEGATIVE OR ZERO";
+    public static string NothingToReturn = "NO ITEM TO RETURN";
     public static string EnterAmount = "ENTER AMOUNT";
     public static string EnterReturnQuantity = "ENTER RETURN QUANTITY";
     public static string ReturnQuantityLarger = "RETURN PRODUCT QUANTITY CAN NOT BE GREATER THAN REMAINING QUANTITY";

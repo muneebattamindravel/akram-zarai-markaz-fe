@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class Screen_Sales_ReturnItems : MonoBehaviour
 {
@@ -12,6 +13,15 @@ public class Screen_Sales_ReturnItems : MonoBehaviour
     public List<SaleItem> saleItems, returnItems;
 
     public TMP_Text text_saleId, text_customerName, text_totalReturnItems, text_totalReturnAmount;
+    public TMP_InputField input_bookNumber, input_billNumber;
+    public MRDatePicker datepicker_returnDate;
+
+    void OnEnable() {
+        input_billNumber.text = "";
+        input_bookNumber.text = "";
+
+        datepicker_returnDate.SelectedDate = DateTime.MinValue;
+    }
 
     public void ShowView(Sale sale)
     {
@@ -197,6 +207,29 @@ public class Screen_Sales_ReturnItems : MonoBehaviour
 
     public void Button_ReturnSaleItemsClicked()
     {
+        if (datepicker_returnDate.SelectedDate == DateTime.MinValue)
+        {
+            GUIManager.Instance.ShowToast(Constants.Error, Constants.DateEmpty, false);
+            return;
+        }
+
+        if (returnItems.Count <=0 && CalculateTotalReturnAmount() <= 0) {
+            GUIManager.Instance.ShowToast(Constants.Failed, Constants.NothingToReturn, false);
+            return;
+        }
+
+        if (string.IsNullOrEmpty(input_bookNumber.text))
+        {
+            GUIManager.Instance.ShowToast(Constants.Failed, Constants.EnterBookNumber, false);
+            return;
+        }
+
+        if (string.IsNullOrEmpty(input_billNumber.text))
+        {
+            GUIManager.Instance.ShowToast(Constants.Failed, Constants.EnterBillNumber, false);
+            return;
+        }
+
         if (returnItems.Count > 0 && CalculateTotalReturnAmount() > 0)
         {
             GUIManager.Instance.OpenScreenExplicitly(MRScreenName.Confirmation);
@@ -210,12 +243,15 @@ public class Screen_Sales_ReturnItems : MonoBehaviour
                     foreach (SaleItem item in returnItems)
                         item.saleId = this.sale.id;
 
-                    Debug.Log("Returning the following items");
-                    foreach(SaleItem saleItem in returnItems) {
-                        saleItem.Print();
-                    }
 
-                    SalesManager.Instance.ReturnSaleItems(this.sale.id, returnItems, (response) => {
+                    SaleReturn saleReturn = new SaleReturn();
+                    saleReturn.saleId = this.sale.id;
+                    saleReturn.returnItems = this.returnItems;
+                    saleReturn.bookNumber = input_bookNumber.text;
+                    saleReturn.billNumber = input_billNumber.text;
+                    saleReturn.returnDate = datepicker_returnDate.SelectedDate;
+
+                    SalesManager.Instance.ReturnSaleItems(saleReturn, (response) => {
                         GUIManager.Instance.ShowToast(Constants.Success, Constants.SaleItemsReturned);
                         Preloader.Instance.HideFull();
                         GUIManager.Instance.Back();

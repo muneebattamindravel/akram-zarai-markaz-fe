@@ -32,9 +32,9 @@ public class SalesManager : MonoBehaviour
         });
     }
 
-    public void ReturnSaleItems(int saleId, List<SaleItem> saleItems, ResponseAction<List<SaleItem>> successAction, ResponseAction<List<SaleItem>> failAction = null)
+    public void ReturnSaleItems(SaleReturn saleReturn, ResponseAction<SaleReturn> successAction, ResponseAction<SaleReturn> failAction = null)
     {
-       APIManager.Instance.Post<List<SaleItem>>(SALE_RETURNS_ROUTE + "/" + saleId, saleItems, (response) =>
+       APIManager.Instance.Post<SaleReturn>(SALE_RETURNS_ROUTE + "/" + saleReturn.saleId, saleReturn, (response) =>
        {
            successAction(response);
        }, (response) => {
@@ -62,6 +62,18 @@ public class SalesManager : MonoBehaviour
 
             foreach(Sale sale in response.data)
                 ConsolidateLostUsedInformation(sale);
+
+            successAction(response);
+
+        }, (response) => {
+            if (failAction != null)
+                failAction(response);
+        });
+    }
+
+    public void GetSaleReturns(MRDateRange range, ResponseAction <List<SaleReturn>> successAction, ResponseAction<List<SaleReturn>> failAction = null)
+    {
+        APIManager.Instance.Get<List<SaleReturn>>(SALE_RETURNS_ROUTE + "?from="+range.from+"&to="+range.to, (response) => {
 
             successAction(response);
 

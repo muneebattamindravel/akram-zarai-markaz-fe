@@ -731,10 +731,12 @@ public class Screen_Sale_View_Add : MonoBehaviour
             sale.discount = float.Parse(input_discount.text, CultureInfo.InvariantCulture.NumberFormat);
         else
             sale.discount = 0;
+            
         if (datepicker_saleDate.SelectedDate == DateTime.MinValue)
             sale.saleDate = DateTime.Now;
         else
             sale.saleDate = datepicker_saleDate.SelectedDate;
+
         sale.bookNumber = input_bookNumber.text;
         sale.billNumber = input_billNumber.text;
         if (selectedContact != null)

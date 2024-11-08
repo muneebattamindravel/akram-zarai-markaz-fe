@@ -53,5 +53,6 @@ public enum MRScreenName
 	PartnersCapital_Add,
 	PartnersProfit_Add,
 	ProductStock_Return,
-	ManualStock_Return
+	ManualStock_Return,
+	SaleReturns_List
 }
